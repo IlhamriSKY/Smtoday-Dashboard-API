@@ -1,0 +1,26 @@
+<?php
+
+namespace Vanguard\Http\Requests\Smtoday\Iklanimage;
+
+use Illuminate\Foundation\Http\FormRequest;
+
+use Vanguard\Http\Requests\Request;
+use Vanguard\Support\Enum\IklantextStatus;
+use Vanguard\Iklanimage;
+
+class UpdateIklanimageRequest extends Request
+{
+   /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array
+     */
+    public function rules()
+    {
+        //$iklantext = $this->iklantext();
+
+        return [
+            'judul' => '',
+        ];
+    }
+}

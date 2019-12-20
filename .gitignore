@@ -1,0 +1,12 @@
+.DS_Store
+/storage/*.key
+/.idea
+/.vscode
+/.vagrant
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+.phpunit.result.cache
+.php_cs.cache
+/documentation

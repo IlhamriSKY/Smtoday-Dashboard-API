@@ -1,0 +1,9 @@
+.input-group-prepend .btn, .input-group-append .btn {
+  padding: 0.35rem 1rem;
+    border: 1px solid $gray-400;
+}
+
+
+.form-control.input-solid:not([disabled]) {
+  background-color: $light;
+}

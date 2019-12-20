@@ -1,0 +1,54 @@
+
+// Fonts
+// Here you can import any font you want and update the _variables.scss file
+// to make use of those fonts across the application.
+//@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+//@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,700");
+
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+// Custom Vanguard styles
+@import "components/general";
+@import "components/card";
+@import "components/button";
+@import "components/avatar";
+@import "components/input";
+@import "components/list-group";
+@import "components/nav-tabs";
+@import "components/navbar";
+@import "components/sidebar";
+@import "components/switch";
+@import "components/sweet-alert";
+@import "components/table";
+@import "components/util";
+@import "components/datepicker";
+
+
+@include media-breakpoint-down(md) {
+  .sidebar:not(.expanded) {
+    margin-left: -250px;
+  }
+
+  .content-page {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+
+  .widget {
+    height: 128px;
+
+    .row .text-muted {
+      width: 80px;
+      text-align: right;
+      word-wrap: normal;
+    }
+  }
+}

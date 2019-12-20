@@ -1,0 +1,31 @@
+.nav-item.announcements {
+    a.nav-icon {
+        font-size: 1.3rem;
+
+        &:hover .activity-badge {
+            transform: scale(1.1);
+        }
+    }
+
+    .activity-badge {
+        width: 13px;
+        height: 13px;
+        background: #bf5329;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        position: absolute;
+        right: -1px;
+        -webkit-transition: all 0.15s;
+        transition: all 0.15s;
+        -webkit-transform: scale(0.85);
+        transform: scale(0.85);
+    }
+
+    .navbar-item {
+        border-bottom: 1px solid #e0ebf0;
+
+        &:last-of-type {
+            border-bottom: 0;
+        }
+    }
+}

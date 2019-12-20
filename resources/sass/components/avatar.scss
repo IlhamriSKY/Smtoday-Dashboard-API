@@ -1,0 +1,16 @@
+.avatar-source {
+  text-align: center;
+}
+.avatar-source img {
+  width: 120px;
+}
+.avatar-source img:hover,
+.avatar-source div:hover {
+  background-color: #fff;
+  border: 2px solid $primary;
+  cursor: pointer;
+}
+
+#avatar.croppie-container {
+  padding: 35px 30px 30px;
+}

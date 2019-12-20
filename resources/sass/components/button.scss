@@ -1,0 +1,78 @@
+.btn-rounded {
+  border-radius: 2em;
+}
+
+.btn-avatar {
+  padding: 10px 0;
+  border: 1px solid #dfdfdf;
+  margin-top: 10px;
+  transition: all 0.5s ease 0s;
+}
+
+.btn-avatar:hover {
+  background-color: #000;
+  border-color: #000;
+  opacity: 0.8;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-upload {
+  width: 120px;
+  height: 120px;
+  padding: 6px 0;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.428571429;
+  font-size: 65px;
+  color: #ccc;
+}
+
+.btn-icon {
+  padding: 3px 5px;
+  color: $gray-500;
+}
+
+.btn-upload {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-upload input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
+}
+
+// Social Buttons
+.btn-facebook {
+  color: #4267b2;
+
+  &:hover {
+    color: darken(#4267b2, 10%)
+  }
+}
+.btn-twitter {
+  color: #1ba1f3;
+
+  &:hover {
+    color: darken(#1ba1f3, 10%)
+  }
+}
+.btn-google {
+  color: #de564a;
+
+  &:hover {
+    color: darken(#de564a, 10%)
+  }
+}

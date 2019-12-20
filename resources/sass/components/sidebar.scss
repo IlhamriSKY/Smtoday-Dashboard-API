@@ -1,0 +1,211 @@
+$sidebar-bg-color: #30353e;
+
+.sidebar {
+    top: 70px;
+    width: 250px;
+    min-width: 250px;
+    z-index: 10;
+    background: $sidebar-bg-color;
+    bottom: 0;
+    margin-top: 0;
+    padding-bottom: 30px;
+    position: fixed;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
+    overflow-y: scroll;
+    height: 100%;
+
+    transition: all 0.3s;
+
+    .user-box {
+        ul li a {
+            color: $gray-500;
+
+            &:hover {
+                color: $primary;
+            }
+
+            i {
+                font-size: 14px;
+            }
+        }
+
+        h5 a {
+            color: $gray-500;
+            font-size: 15px;
+            text-decoration: none;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    .nav-link {
+        font-weight: 400;
+        color: $gray-500;
+    }
+
+    .nav-link.active,
+    .nav-link:hover {
+        color: $gray-300;
+    }
+
+    .nav-link.active {
+        background-color: lighten($sidebar-bg-color, 5%);
+    }
+
+    .sub-menu li {
+        padding-left: 40px;
+    }
+
+    .sidebar-heading {
+        font-size: .75rem;
+        text-transform: uppercase;
+    }
+
+    ul li a i {
+        display: inline-block;
+        font-size: 16px;
+        line-height: 17px;
+        margin-right: 13px;
+        text-align: center;
+        vertical-align: middle;
+        width: 20px;
+    }
+
+    .dropdown-menu {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    /* closed state */
+    .nav-item .nav-link[aria-expanded="false"]::after {
+        content: "\f0d7";
+        font-family: "Font Awesome 5 Free";
+        display: inline;
+        text-align: right;
+        padding-left: 5px;
+        font-weight: 900;
+    }
+
+    /* open state */
+    .nav-item .nav-link[aria-expanded="true"] {
+        color: $gray-300;
+    }
+
+    .nav-item .nav-link[aria-expanded="true"]::after {
+        content: "\f0d8";
+        font-family: "Font Awesome 5 Free";
+        display: inline;
+        text-align: right;
+        padding-left: 5px;
+        font-weight: 900;
+    }
+}
+
+.sidebar-collapsed .sidebar {
+    width: 80px;
+    min-width: 80px;
+
+    .sub-menu li {
+        padding-left: 0;
+    }
+
+    .user-box {
+        display: none;
+    }
+
+    .nav-link span {
+        display: none;
+    }
+
+    .sidebar-sticky {
+        padding-top: 1rem;
+        overflow: inherit !important;
+    }
+
+    .nav > li.nav-item {
+        width: 50px;
+        margin-top: 10px;
+    }
+
+    ul li a i {
+        font-size: 20px;
+    }
+
+    li {
+        position: relative;
+        white-space: nowrap;
+
+        ul {
+            display: none;
+        }
+
+        &:hover {
+            background-color: $sidebar-bg-color;
+
+            .nav-link span {
+                display: inline-block;
+            }
+
+            & > a {
+                position: relative;
+                width: 260px;
+                background-color: $sidebar-bg-color;
+                -webkit-transition: none;
+                transition: none;
+                border-top-right-radius: $border-radius;
+
+                span {
+                    padding-left: 30px;
+                    display: inline;
+                }
+            }
+
+            ul {
+                display: block;
+                left: 60px;
+                position: absolute;
+                width: 200px;
+                height: auto !important;
+                overflow: hidden;
+                background-color: $sidebar-bg-color;
+                border-bottom-right-radius: $border-radius;
+
+                li a {
+                    padding-left: 20px;
+
+                    span {
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .nav-item .nav-link[aria-expanded="true"]::after,
+    .nav-item .nav-link[aria-expanded="false"]::after {
+        display: none;
+    }
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+    .sidebar-sticky {
+        position: -webkit-sticky;
+        position: sticky;
+    }
+}

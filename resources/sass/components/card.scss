@@ -1,0 +1,21 @@
+.card {
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06), 0 1px 0px 0 rgba(0, 0, 0, 0.02);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border: none;
+
+    h5.card-title {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .card-header {
+        font-size: 1.025rem;
+        font-weight: normal;
+    }
+
+    h5.card-title.card-title-bold {
+        font-weight: 500;
+    }
+}

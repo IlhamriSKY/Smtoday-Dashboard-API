@@ -1,0 +1,17 @@
+[role="main"] {
+  padding-top: 95px;
+}
+
+.content-page {
+     margin-left: 250px;
+     overflow: hidden;
+     width: 100%;
+ }
+
+.sidebar-collapsed .content-page {
+    margin-left: 80px;
+}
+
+label {
+  font-weight: 500;
+}

@@ -1,0 +1,16 @@
+@extends('layouts.app')
+
+@section('page-title', '$STUDLY_NAME$')
+@section('page-heading', '$STUDLY_NAME$')
+
+@section('breadcrumbs')
+    <li class="breadcrumb-item active">
+        $STUDLY_NAME$
+    </li>
+@stop
+
+@section('content')
+    <p>
+        This view is loaded from <strong>$STUDLY_NAME$</strong> plugin.
+    </p>
+@stop

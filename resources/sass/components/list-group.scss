@@ -1,0 +1,17 @@
+
+.list-group.list-group-borderless {
+  .list-group-item {
+    border: none;
+  }
+}
+
+.list-group.list-group-striped {
+  .list-group-item:nth-of-type(odd) {
+    background-color: $table-accent-bg;
+    border-radius: 5px;
+  }
+}
+
+.list-group-flush .list-group-item:first-of-type {
+  border-top: none;
+}

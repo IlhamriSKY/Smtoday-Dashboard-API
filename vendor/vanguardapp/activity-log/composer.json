@@ -1,0 +1,43 @@
+{
+    "name": "vanguardapp/activity-log",
+    "description": "User activity log plugin for Vanguard.",
+    "keywords": [
+        "laravel",
+        "vanguard",
+        "activity log",
+        "user activity"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Milos Stojanovic",
+            "email": "stojanovic.loshmi@gmail.com",
+            "homepage": "https://mstojanovic.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "vanguardapp/plugins": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~8.0"
+    },
+    "autoload": {
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ],
+        "psr-4": {
+            "Vanguard\\UserActivity\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vanguard\\UserActivity\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
